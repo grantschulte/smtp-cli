@@ -1,0 +1,20 @@
+{
+  "name": "basic-mail",
+  "version": "1.0.0",
+  "description": "A Basic Mail CLI",
+  "main": "basic-mail.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "inquirer": "^4.0.1",
+    "nodemailer": "^4.4.1",
+    "yargs": "^10.0.3"
+  },
+  "bin": "./src/basic-mail.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "author": "Grant J. Schulte",
+  "license": "ISC"
+}
