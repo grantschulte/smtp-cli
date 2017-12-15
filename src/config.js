@@ -1,6 +1,6 @@
+const pj = require("../package.json");
+
 module.exports = {
-  transport: {
-    host: "smtp.ethereal.email",
-    port: 587
-  }
+  description: pj.description,
+  version: pj.version
 };

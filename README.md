@@ -1,3 +1,3 @@
 # Basic Mail
 
-A basic mail node mail cli.
+A basic command line smtp mail client.

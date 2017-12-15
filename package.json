@@ -1,9 +1,10 @@
 {
   "name": "basic-mail",
   "version": "1.0.0",
-  "description": "A Basic Mail CLI",
+  "description": "A basic command line smtp mail client.",
   "main": "basic-mail.js",
   "dependencies": {
+    "commander": "2.12.2",
     "dotenv": "^4.0.0",
     "inquirer": "^4.0.1",
     "nodemailer": "^4.4.1",

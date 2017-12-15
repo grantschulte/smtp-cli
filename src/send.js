@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const fs = require("fs");
 const config = require("./config");
 
-function send(answers) {
+function send(config, answers) {
   const {
     name,
     email,
@@ -11,12 +11,12 @@ function send(answers) {
   } = answers;
 
   let transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
+    host: config.host,
+    port: config.port,
     secure: false,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
+      user: config.user,
+      pass: config.pass
     }
   });
 
