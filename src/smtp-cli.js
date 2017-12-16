@@ -22,8 +22,6 @@ program
       port: options.port || 587
     };
 
-    console.log(server);
-
     prompt(questions).then(answers => {
       send(server, answers);
     });
@@ -32,6 +30,6 @@ program
 program.parse(process.argv);
 
 if (!process.argv.slice(2).length || !/[arudl]/.test(process.argv.slice(2))) {
-  program.outputHelp();
+  program.help();
   process.exit();
 }
